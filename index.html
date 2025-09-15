@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Launch Countdown — UI (HTML + CSS)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container" role="region" aria-labelledby="launch-title">
+      <div class="bg-decor" aria-hidden="true"></div>
+
+      <header>
+        <div class="brand">
+          <div class="logo">LC</div>
+          <div>
+            <h1 id="launch-title">Launch Countdown</h1>
+          </div>
+        </div>
+      </header>
+
+      <main class="card" role="main">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+          "
+        ></div>
+
+        <div class="countdown-wrap">
+          <div class="time-grid" aria-label="Countdown values">
+            <div class="time-card">
+              <div class="time-number">120</div>
+              <div class="time-label">Days</div>
+            </div>
+            <div class="time-card">
+              <div class="time-number">21</div>
+              <div class="time-label">Hours</div>
+            </div>
+            <div class="time-card">
+              <div class="time-number">47</div>
+              <div class="time-label">Minutes</div>
+            </div>
+            <div class="time-card">
+              <div class="time-number">08</div>
+              <div class="time-label">Seconds</div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
